@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <meta charset="utf-8">
+    <title>Seed_prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <h1 >
+        Seed Prediction Generator
+    </h1>
+    <div class="home">
+        <form action="{{ url_for('predict')}}" method="post">
+
+            <input type="text" name="Area" placeholder="Area" required="required"">
+            <input type="text" name="Perimeter" placeholder="Perimeter" required="required"">
+            <input type="text" name="Compactness" placeholder="Compactness" required="required"">
+            <input type="text" name="Kernal Length" placeholder="Kernal Length" required="required"">
+            <input type="text" name="Kernal Width" placeholder="Kernal Width" required="required"">
+            <input type="text" name="Asymmetry Coefficient" placeholder="Asymmetry Coefficient" required="required"">
+            <input type="text" name="Kernal Groove" placeholder="Kernal Groove" required="required"">
+            <div>
+                <button type="submit" class="btn">Seed Type</button>
+            </div>
+        </form>
+
+    </div>
+    <div class="text_output">
+        {{predict_text}}
+    </div>
+</body>
+</html>
