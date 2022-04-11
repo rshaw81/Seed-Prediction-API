@@ -2,7 +2,7 @@
 body {
     height: 100%;
     border: 1px solid transparent;
-    background-image: url("farm_feild.jpg");
+    background-image: url("farm_field.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 100%;
@@ -17,7 +17,7 @@ body {
 html {
     height: 100%;
     border: 1px solid transparent;
-    background-image: url("farm_feild.jpg");
+    background-image: url("farm_field.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 100%;
